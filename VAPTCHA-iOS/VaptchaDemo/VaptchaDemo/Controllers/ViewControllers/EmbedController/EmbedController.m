@@ -70,7 +70,7 @@
         make.centerX.mas_equalTo(self.contentView);
         make.width.mas_lessThanOrEqualTo(defaultSize.width);
     }];
-    self.titleLabel.text = @"示例：防注册机、防暴力破解";
+    self.titleLabel.text = [NSString stringWithFormat:@"%@%@",NSLocalizedString(@"example", nil),NSLocalizedString(@"embedTitle", nil)];
     //
     self.accountView = [VPInputView new];
     self.accountView.imageV.image = [UIImage imageNamed:@"用户"];
@@ -106,7 +106,7 @@
     }];
     //
     self.loginButton = [VPEnabledButton new];
-    [self.loginButton setTitle:@"登 录" forState:UIControlStateNormal];
+    [self.loginButton setTitle:NSLocalizedString(@"vpLogin", nil) forState:UIControlStateNormal];
     self.loginButton.layer.cornerRadius = 2;
     self.loginButton.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.loginButton.layer.borderWidth = 0.5;

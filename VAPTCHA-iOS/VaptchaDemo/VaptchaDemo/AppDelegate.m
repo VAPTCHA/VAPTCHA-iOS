@@ -23,10 +23,7 @@
     
     //
     [VPSDKManager setVaptchaSDKVid:@"5b4d9c33a485e50410192331" scene:@"01"];
-    [VPSDKManager setOutageServer:@"http://144.48.9.208:4397/downtime"];
-    //    [VPSDKManager setOutageOpen:<#(BOOL)#>]
-    //    [VPSDKManager setPreferredLanguage:@"zh-Hant"];
-    
+    //
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self getMainTabBarController:false];
     [self.window makeKeyAndVisible];

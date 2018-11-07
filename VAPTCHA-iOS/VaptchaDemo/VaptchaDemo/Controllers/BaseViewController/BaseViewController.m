@@ -17,7 +17,7 @@
 - (UIButton *)resetButton {
     if (!_resetButton) {
         _resetButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 60, 44)];
-        [_resetButton setTitle:@"重置验证" forState:UIControlStateNormal];
+        [_resetButton setTitle:NSLocalizedString(@"resetVerify", nil) forState:UIControlStateNormal];
         _resetButton.titleLabel.font = [UIFont systemFontOfSize:15 weight:UIFontWeightRegular];
         [_resetButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         _resetButton.layer.cornerRadius = 2;

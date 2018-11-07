@@ -82,7 +82,7 @@
         make.centerX.mas_equalTo(self.contentView);
         make.width.mas_lessThanOrEqualTo(defaultSize.width);
     }];
-    self.titleLabel.text = @"示例：防刷票";
+    self.titleLabel.text = [NSString stringWithFormat:@"%@%@",NSLocalizedString(@"example", nil),NSLocalizedString(@"clickTitle", nil)];
     //
     self.subTitleLabel = [UILabel new];
     self.subTitleLabel.numberOfLines = 0;
@@ -93,7 +93,7 @@
         make.top.mas_equalTo(self.titleLabel.mas_bottom).offset(padding);
         make.width.mas_lessThanOrEqualTo(defaultSize.width);
     }];
-    self.subTitleLabel.text = @"你从哪里知道VAPTCHA的?";
+    self.subTitleLabel.text = NSLocalizedString(@"clickVaptcha", nil);
     //
     CGSize clickSize = CGSizeMake(defaultSize.width, 36.0);
     self.clickOne = [VPCustomClickButton new];
@@ -125,10 +125,10 @@
         make.size.mas_equalTo(clickSize);
     }];
     //
-    self.clickOne.clickLabel.text = @"搜索引擎";
-    self.clickTwo.clickLabel.text = @"互联网广告";
-    self.clickThree.clickLabel.text = @"网站使用案例";
-    self.clickFour.clickLabel.text = @"朋友推荐";
+    self.clickOne.clickLabel.text = NSLocalizedString(@"clickOne", nil);
+    self.clickTwo.clickLabel.text = NSLocalizedString(@"clickTwo", nil);
+    self.clickThree.clickLabel.text = NSLocalizedString(@"clickThree", nil);
+    self.clickFour.clickLabel.text = NSLocalizedString(@"clickFour", nil);
     //
     [self.view addSubview:self.clickManager.clickButton];
     [self.clickManager.clickButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -138,7 +138,7 @@
     }];
     //
     self.submitButton = [VPEnabledButton new];
-    [self.submitButton setTitle:@"提交" forState:UIControlStateNormal];
+    [self.submitButton setTitle:NSLocalizedString(@"vpSubmit", nil) forState:UIControlStateNormal];
     self.submitButton.layer.cornerRadius = 2;
     self.submitButton.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.submitButton.layer.borderWidth = 0.5;

@@ -20,9 +20,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //
-    self.navigationItem.rightBarButtonItem = nil;
-    [self setupSubviews];
 }
 //
 - (void)resetButtonDidClickedAction {
@@ -34,19 +31,25 @@
 }
 
 - (void)setupSubviews {
+    CGFloat padding = VPCustomViewPadding;
+    CGSize defaultSize = [self viewDefaultSize];
+    
     UIButton *changeButton = [UIButton new];
     [changeButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
     if (self.outage) {
-        [changeButton setTitle:@"切换到正常模式" forState:UIControlStateNormal];
+        [changeButton setTitle:NSLocalizedString(@"outageToNormal", nil) forState:UIControlStateNormal];
     }else {
-        [changeButton setTitle:@"切换到宕机模式" forState:UIControlStateNormal];
+        [changeButton setTitle:NSLocalizedString(@"normalToOutage", nil) forState:UIControlStateNormal];
     }
+    changeButton.titleLabel.font = [UIFont systemFontOfSize:15 weight:UIFontWeightRegular];
+    changeButton.layer.cornerRadius = 2;
+    changeButton.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    changeButton.layer.borderWidth = 0.5;
     [self.view addSubview:changeButton];
     [changeButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(self.view);
         make.top.mas_equalTo(self.view.mas_centerY);
-        make.width.mas_equalTo(self.view).multipliedBy(0.8);
-        make.height.mas_equalTo(40.0);
+        make.size.mas_equalTo(defaultSize);
     }];
     [changeButton addTarget:self action:@selector(changeButtonDidClickedAction) forControlEvents:UIControlEventTouchUpInside];
     
@@ -60,11 +63,11 @@
         tf.layer.cornerRadius = 3;
         tf.layer.borderColor = [UIColor lightGrayColor].CGColor;
         tf.layer.borderWidth = 0.5;
-        tf.placeholder = @"请输入宕机服务器地址";
+        tf.placeholder = NSLocalizedString(@"outageServer", nil);
         [self.view addSubview:tf];
         [tf mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.mas_equalTo(self.view);
-            make.bottom.mas_equalTo(self.view.mas_centerY).offset(-20.0);
+            make.bottom.mas_equalTo(self.view.mas_centerY).offset(-padding);
             make.width.mas_equalTo(changeButton);
             make.height.mas_equalTo(changeButton);
         }];

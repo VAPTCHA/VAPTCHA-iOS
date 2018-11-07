@@ -36,8 +36,6 @@
 		0361346C21928F11002F845C /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361345021928F11002F845C /* IQUIView+Hierarchy.m */; };
 		0361346D21928F11002F845C /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361345421928F11002F845C /* IQUIViewController+Additions.m */; };
 		0361346E21928F11002F845C /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361345621928F11002F845C /* IQKeyboardReturnKeyHandler.m */; };
-		0361347021928F38002F845C /* VaptchaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0361346F21928F38002F845C /* VaptchaSDK.framework */; };
-		0361347221928F54002F845C /* VaptchaSDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0361346F21928F38002F845C /* VaptchaSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0361348E21928F90002F845C /* VPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361347521928F90002F845C /* VPNavigationController.m */; };
 		0361348F21928F90002F845C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361347821928F90002F845C /* BaseViewController.m */; };
 		0361349021928F90002F845C /* OutageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361347C21928F90002F845C /* OutageController.m */; };
@@ -48,6 +46,9 @@
 		0361349521928F90002F845C /* VPCustomClickButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361348B21928F90002F845C /* VPCustomClickButton.m */; };
 		0361349621928F90002F845C /* VPInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361348C21928F90002F845C /* VPInputView.m */; };
 		0361349921928F99002F845C /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361349721928F98002F845C /* MainTabBarController.m */; };
+		0361349E219295D4002F845C /* VaptchaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0361349D219295D4002F845C /* VaptchaSDK.framework */; };
+		0361349F219295E1002F845C /* VaptchaSDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0361349D219295D4002F845C /* VaptchaSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		036134A42192986C002F845C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 036134A62192986C002F845C /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,7 +58,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0361347221928F54002F845C /* VaptchaSDK.framework in CopyFiles */,
+				0361349F219295E1002F845C /* VaptchaSDK.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +127,6 @@
 		0361345421928F11002F845C /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIViewController+Additions.m"; sourceTree = "<group>"; };
 		0361345521928F11002F845C /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
 		0361345621928F11002F845C /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
-		0361346F21928F38002F845C /* VaptchaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VaptchaSDK.framework; sourceTree = "<group>"; };
 		0361347521928F90002F845C /* VPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPNavigationController.m; sourceTree = "<group>"; };
 		0361347621928F90002F845C /* VPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPNavigationController.h; sourceTree = "<group>"; };
 		0361347821928F90002F845C /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -147,6 +147,12 @@
 		0361348D21928F90002F845C /* VPEnabledButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPEnabledButton.h; sourceTree = "<group>"; };
 		0361349721928F98002F845C /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		0361349821928F99002F845C /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		0361349D219295D4002F845C /* VaptchaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VaptchaSDK.framework; sourceTree = "<group>"; };
+		036134A02192971D002F845C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		036134A121929726002F845C /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		036134A52192986C002F845C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		036134A72192986E002F845C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		036134A821929870002F845C /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0361347021928F38002F845C /* VaptchaSDK.framework in Frameworks */,
+				0361349E219295D4002F845C /* VaptchaSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +197,7 @@
 				0361340B21927D55002F845C /* LaunchScreen.storyboard */,
 				0361340E21927D55002F845C /* Info.plist */,
 				0361340F21927D55002F845C /* main.m */,
+				036134A62192986C002F845C /* Localizable.strings */,
 			);
 			path = VaptchaDemo;
 			sourceTree = "<group>";
@@ -198,7 +205,7 @@
 		0361341621928D32002F845C /* Vaptcha */ = {
 			isa = PBXGroup;
 			children = (
-				0361346F21928F38002F845C /* VaptchaSDK.framework */,
+				0361349D219295D4002F845C /* VaptchaSDK.framework */,
 				0361341721928D58002F845C /* VPResource.bundle */,
 			);
 			path = Vaptcha;
@@ -452,6 +459,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 036133F421927D53002F845C;
 			productRefGroup = 036133FE21927D53002F845C /* Products */;
@@ -468,6 +477,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				036134A42192986C002F845C /* Localizable.strings in Resources */,
 				0361346721928F11002F845C /* IQKeyboardManager.bundle in Resources */,
 				0361340D21927D55002F845C /* LaunchScreen.storyboard in Resources */,
 				0361340A21927D55002F845C /* Assets.xcassets in Resources */,
@@ -527,8 +537,20 @@
 			isa = PBXVariantGroup;
 			children = (
 				0361340C21927D55002F845C /* Base */,
+				036134A02192971D002F845C /* zh-Hans */,
+				036134A121929726002F845C /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		036134A62192986C002F845C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				036134A52192986C002F845C /* en */,
+				036134A72192986E002F845C /* zh-Hans */,
+				036134A821929870002F845C /* zh-Hant */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -538,6 +560,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -585,7 +608,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -597,6 +620,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -638,7 +662,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -652,6 +676,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V294PZD7MB;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vaptcha",
@@ -674,6 +699,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V294PZD7MB;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vaptcha",

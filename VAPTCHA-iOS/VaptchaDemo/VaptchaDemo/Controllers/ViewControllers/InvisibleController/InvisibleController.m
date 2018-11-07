@@ -65,7 +65,7 @@
         make.centerX.mas_equalTo(self.contentView);
         make.width.mas_lessThanOrEqualTo(defaultSize.width);
     }];
-    self.titleLabel.text = @"示例：防灌水";
+    self.titleLabel.text = [NSString stringWithFormat:@"%@%@",NSLocalizedString(@"example", nil),NSLocalizedString(@"invisibleTitle", nil)];
     //
     NSString *text = @"隐藏模式下，人机验证过程将合并到正常的业务流程中，本示例中点击提交按钮的同时进行人机验证。点击式和隐藏式均支持智能检测，一键通过，通过高级设置可以隐藏检测动画，安全等级评估较高的客户端甚至感觉不到VAPTCHA的存在...";
     self.textView = [UITextView new];
@@ -86,7 +86,7 @@
     //
     padding += 10.0;
     self.invisibleButton = [VPInvisibleSubmitButton new];
-    [self.invisibleButton setTitle:@"提交" forState:UIControlStateNormal];
+    [self.invisibleButton setTitle:NSLocalizedString(@"vpSubmit", nil) forState:UIControlStateNormal];
     [self.invisibleButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.invisibleButton.layer.cornerRadius = 2.0;
     self.invisibleButton.titleLabel.font = [UIFont systemFontOfSize:15 weight:UIFontWeightRegular];
@@ -109,7 +109,15 @@
         make.centerY.mas_equalTo(self.invisibleButton);
     }];
     //
-    captionLabel.text = @"还可以输入 45字";
+    NSString *captions = NSLocalizedString(@"invisibleWordLast", nil);//{word}
+    NSString *words = @"45";
+    captions = [captions stringByReplacingOccurrencesOfString:@"{word}" withString:words];
+    NSMutableAttributedString *captionAttri = [[NSMutableAttributedString alloc] initWithString:captions];
+    NSRange captionWordRange = [captions rangeOfString:words];
+    if (captionWordRange.location!=NSNotFound) {
+        [captionAttri setAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13 weight:UIFontWeightBold]} range:captionWordRange];
+    }
+    captionLabel.attributedText = captionAttri;
     
     //
     [self.resetButton mas_makeConstraints:^(MASConstraintMaker *make) {

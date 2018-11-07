@@ -1,0 +1,42 @@
+/* 
+  Localizable.strings
+  VaptchaDemo
+
+  Created by guoshikeji_a on 2018/11/7.
+  Copyright © 2018年 guoshikeji. All rights reserved.
+*/
+
+
+"embedTypeString" = "Embed";
+"clickTypeString" = "Click";
+"invisibleTypeString" = "Invisible";
+"outageTypeString" = "Outage";
+"normalTypeString" = "Normal";
+
+//
+"example" = "Example：";
+
+//embed
+"embedTitle" = "Prevent registration machine, brute force";
+"vpLogin" = "Login";
+
+//click
+"clickTitle" = "Prevent the brush ticket";
+"clickVaptcha" = "Where are you know VAPTCHA?";
+"clickOne" = "Search engine";
+"clickTwo" = "Internet advertising";
+"clickThree" = "Website using cases";
+"clickFour" = "Friends recommended";
+
+//invisible
+"invisibleTitle" = "Prevent irrigation";
+"invisibleWordLast" = "Also can input {word} words";
+
+//outage
+"normalToOutage" = "Change to outage";
+"outageToNormal" = "Change to normal";
+"outageServer" = "Please input outage server";
+
+
+"vpSubmit" = "Submit";
+"resetVerify" = "Reset";

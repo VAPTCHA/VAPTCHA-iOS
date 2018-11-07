@@ -1,0 +1,41 @@
+/* 
+  Localizable.strings
+  VaptchaDemo
+
+  Created by guoshikeji_a on 2018/11/7.
+  Copyright © 2018年 guoshikeji. All rights reserved.
+*/
+
+"embedTypeString" = "嵌入式";
+"clickTypeString" = "點擊式";
+"invisibleTypeString" = "隱藏式";
+"outageTypeString" = "宕機模式";
+"normalTypeString" = "正常模式";
+
+//
+"example" = "示例：";
+
+//embed
+"embedTitle" = "防註冊機、防暴力破解";
+"vpLogin" = "登錄";
+
+//click
+"clickTitle" = "防刷票";
+"clickVaptcha" = "妳從哪裏知道VAPTCHA的?";
+"clickOne" = "搜索引擎";
+"clickTwo" = "互聯網廣告";
+"clickThree" = "網站使用案例";
+"clickFour" = "朋友推薦";
+
+//invisible
+"invisibleTitle" = "防灌水";
+"invisibleWordLast" = "還可以輸入 {word}字";
+
+//outage
+"normalToOutage" = "切換到宕機模式";
+"outageToNormal" = "切換到正常模式";
+"outageServer" = "請輸入宕機服務器地址";
+
+
+"vpSubmit" = "提交";
+"resetVerify" = "重置驗證";
