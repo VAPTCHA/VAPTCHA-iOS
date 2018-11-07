@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 
+#import "MainTabBarController.h"
+
+#import <VaptchaSDK/VaptchaSDK.h>
+
 @interface AppDelegate ()
 
 @end
@@ -16,8 +20,32 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    //
+    [VPSDKManager setVaptchaSDKVid:@"5b4d9c33a485e50410192331" scene:@"01"];
+    [VPSDKManager setOutageServer:@"http://144.48.9.208:4397/downtime"];
+    //    [VPSDKManager setOutageOpen:<#(BOOL)#>]
+    //    [VPSDKManager setPreferredLanguage:@"zh-Hant"];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self getMainTabBarController:false];
+    [self.window makeKeyAndVisible];
+    
+    //
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(outageChanged:) name:@"VPOutageChanged" object:nil];
     return YES;
+}
+
+- (void)getMainTabBarController:(BOOL)outage {
+    [VPSDKManager setOutageOpen:outage];
+    MainTabBarController *mainTabBarController = [MainTabBarController new];
+    mainTabBarController.outage = outage;
+    self.window.rootViewController = mainTabBarController;
+}
+
+- (void)outageChanged:(NSNotification *)noti {
+    NSNumber *obj = noti.object;
+    [self getMainTabBarController:obj.boolValue];
 }
 
 

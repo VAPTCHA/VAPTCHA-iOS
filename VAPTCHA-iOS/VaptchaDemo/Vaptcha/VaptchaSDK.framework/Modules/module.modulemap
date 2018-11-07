@@ -1,0 +1,6 @@
+framework module VaptchaSDK {
+  umbrella header "VaptchaSDK.h"
+
+  export *
+  module * { export * }
+}

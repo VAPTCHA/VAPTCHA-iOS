@@ -8,24 +8,145 @@
 
 /* Begin PBXBuildFile section */
 		0361340221927D53002F845C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361340121927D53002F845C /* AppDelegate.m */; };
-		0361340521927D53002F845C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361340421927D53002F845C /* ViewController.m */; };
-		0361340821927D53002F845C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0361340621927D53002F845C /* Main.storyboard */; };
 		0361340A21927D55002F845C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0361340921927D55002F845C /* Assets.xcassets */; };
 		0361340D21927D55002F845C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0361340B21927D55002F845C /* LaunchScreen.storyboard */; };
 		0361341021927D55002F845C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361340F21927D55002F845C /* main.m */; };
+		0361341821928D58002F845C /* VPResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0361341721928D58002F845C /* VPResource.bundle */; };
+		0361345721928F11002F845C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361341C21928F11002F845C /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		0361345821928F11002F845C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361342521928F11002F845C /* ViewController+MASAdditions.m */; };
+		0361345921928F11002F845C /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361342921928F11002F845C /* MASCompositeConstraint.m */; };
+		0361345A21928F11002F845C /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361342A21928F11002F845C /* MASConstraintMaker.m */; };
+		0361345B21928F11002F845C /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361342B21928F11002F845C /* MASLayoutConstraint.m */; };
+		0361345C21928F11002F845C /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361342C21928F11002F845C /* NSArray+MASAdditions.m */; };
+		0361345D21928F11002F845C /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361342D21928F11002F845C /* View+MASAdditions.m */; };
+		0361345E21928F11002F845C /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361343021928F11002F845C /* MASConstraint.m */; };
+		0361345F21928F11002F845C /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361343221928F11002F845C /* MASViewConstraint.m */; };
+		0361346021928F11002F845C /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361343321928F11002F845C /* MASViewAttribute.m */; };
+		0361346121928F11002F845C /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361343621928F11002F845C /* IQTextView.m */; };
+		0361346221928F11002F845C /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361343A21928F11002F845C /* IQToolbar.m */; };
+		0361346321928F11002F845C /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361343C21928F11002F845C /* IQTitleBarButtonItem.m */; };
+		0361346421928F11002F845C /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361343D21928F11002F845C /* IQBarButtonItem.m */; };
+		0361346521928F11002F845C /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361343E21928F11002F845C /* IQUIView+IQKeyboardToolbar.m */; };
+		0361346621928F11002F845C /* IQPreviousNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361343F21928F11002F845C /* IQPreviousNextView.m */; };
+		0361346721928F11002F845C /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0361344721928F11002F845C /* IQKeyboardManager.bundle */; };
+		0361346821928F11002F845C /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361344A21928F11002F845C /* IQKeyboardManager.m */; };
+		0361346921928F11002F845C /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361344C21928F11002F845C /* IQNSArray+Sort.m */; };
+		0361346A21928F11002F845C /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361344E21928F11002F845C /* IQUITextFieldView+Additions.m */; };
+		0361346B21928F11002F845C /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361344F21928F11002F845C /* IQUIScrollView+Additions.m */; };
+		0361346C21928F11002F845C /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361345021928F11002F845C /* IQUIView+Hierarchy.m */; };
+		0361346D21928F11002F845C /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361345421928F11002F845C /* IQUIViewController+Additions.m */; };
+		0361346E21928F11002F845C /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361345621928F11002F845C /* IQKeyboardReturnKeyHandler.m */; };
+		0361347021928F38002F845C /* VaptchaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0361346F21928F38002F845C /* VaptchaSDK.framework */; };
+		0361347221928F54002F845C /* VaptchaSDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0361346F21928F38002F845C /* VaptchaSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0361348E21928F90002F845C /* VPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361347521928F90002F845C /* VPNavigationController.m */; };
+		0361348F21928F90002F845C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361347821928F90002F845C /* BaseViewController.m */; };
+		0361349021928F90002F845C /* OutageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361347C21928F90002F845C /* OutageController.m */; };
+		0361349121928F90002F845C /* EmbedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361348021928F90002F845C /* EmbedController.m */; };
+		0361349221928F90002F845C /* InvisibleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361348221928F90002F845C /* InvisibleController.m */; };
+		0361349321928F90002F845C /* ClickController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361348521928F90002F845C /* ClickController.m */; };
+		0361349421928F90002F845C /* VPEnabledButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361348A21928F90002F845C /* VPEnabledButton.m */; };
+		0361349521928F90002F845C /* VPCustomClickButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361348B21928F90002F845C /* VPCustomClickButton.m */; };
+		0361349621928F90002F845C /* VPInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361348C21928F90002F845C /* VPInputView.m */; };
+		0361349921928F99002F845C /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361349721928F98002F845C /* MainTabBarController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0361347121928F4B002F845C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0361347221928F54002F845C /* VaptchaSDK.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		036133FD21927D53002F845C /* VaptchaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VaptchaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0361340021927D53002F845C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0361340121927D53002F845C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0361340321927D53002F845C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0361340421927D53002F845C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0361340721927D53002F845C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0361340921927D55002F845C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0361340C21927D55002F845C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0361340E21927D55002F845C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0361340F21927D55002F845C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0361341721928D58002F845C /* VPResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = VPResource.bundle; sourceTree = "<group>"; };
+		0361341B21928F11002F845C /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		0361341C21928F11002F845C /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		0361341D21928F11002F845C /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		0361341E21928F11002F845C /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		0361341F21928F11002F845C /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		0361342021928F11002F845C /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		0361342121928F11002F845C /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		0361342221928F11002F845C /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		0361342321928F11002F845C /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		0361342421928F11002F845C /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		0361342521928F11002F845C /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		0361342621928F11002F845C /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		0361342721928F11002F845C /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		0361342821928F11002F845C /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		0361342921928F11002F845C /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		0361342A21928F11002F845C /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		0361342B21928F11002F845C /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		0361342C21928F11002F845C /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		0361342D21928F11002F845C /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		0361342E21928F11002F845C /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		0361342F21928F11002F845C /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		0361343021928F11002F845C /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		0361343121928F11002F845C /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		0361343221928F11002F845C /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		0361343321928F11002F845C /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		0361343621928F11002F845C /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
+		0361343721928F11002F845C /* IQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTextView.h; sourceTree = "<group>"; };
+		0361343921928F11002F845C /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
+		0361343A21928F11002F845C /* IQToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQToolbar.m; sourceTree = "<group>"; };
+		0361343B21928F11002F845C /* IQPreviousNextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQPreviousNextView.h; sourceTree = "<group>"; };
+		0361343C21928F11002F845C /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTitleBarButtonItem.m; sourceTree = "<group>"; };
+		0361343D21928F11002F845C /* IQBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQBarButtonItem.m; sourceTree = "<group>"; };
+		0361343E21928F11002F845C /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
+		0361343F21928F11002F845C /* IQPreviousNextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQPreviousNextView.m; sourceTree = "<group>"; };
+		0361344021928F11002F845C /* IQToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQToolbar.h; sourceTree = "<group>"; };
+		0361344121928F11002F845C /* IQBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQBarButtonItem.h; sourceTree = "<group>"; };
+		0361344221928F11002F845C /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTitleBarButtonItem.h; sourceTree = "<group>"; };
+		0361344421928F11002F845C /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
+		0361344521928F11002F845C /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
+		0361344721928F11002F845C /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		0361344821928F11002F845C /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardReturnKeyHandler.h; sourceTree = "<group>"; };
+		0361344921928F11002F845C /* IQKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManager.h; sourceTree = "<group>"; };
+		0361344A21928F11002F845C /* IQKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardManager.m; sourceTree = "<group>"; };
+		0361344C21928F11002F845C /* IQNSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQNSArray+Sort.m"; sourceTree = "<group>"; };
+		0361344D21928F11002F845C /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIViewController+Additions.h"; sourceTree = "<group>"; };
+		0361344E21928F11002F845C /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
+		0361344F21928F11002F845C /* IQUIScrollView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIScrollView+Additions.m"; sourceTree = "<group>"; };
+		0361345021928F11002F845C /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
+		0361345121928F11002F845C /* IQNSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Sort.h"; sourceTree = "<group>"; };
+		0361345221928F11002F845C /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
+		0361345321928F11002F845C /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
+		0361345421928F11002F845C /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIViewController+Additions.m"; sourceTree = "<group>"; };
+		0361345521928F11002F845C /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
+		0361345621928F11002F845C /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
+		0361346F21928F38002F845C /* VaptchaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VaptchaSDK.framework; sourceTree = "<group>"; };
+		0361347521928F90002F845C /* VPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPNavigationController.m; sourceTree = "<group>"; };
+		0361347621928F90002F845C /* VPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPNavigationController.h; sourceTree = "<group>"; };
+		0361347821928F90002F845C /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		0361347921928F90002F845C /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		0361347C21928F90002F845C /* OutageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutageController.m; sourceTree = "<group>"; };
+		0361347D21928F90002F845C /* OutageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutageController.h; sourceTree = "<group>"; };
+		0361347F21928F90002F845C /* EmbedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbedController.h; sourceTree = "<group>"; };
+		0361348021928F90002F845C /* EmbedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbedController.m; sourceTree = "<group>"; };
+		0361348221928F90002F845C /* InvisibleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvisibleController.m; sourceTree = "<group>"; };
+		0361348321928F90002F845C /* InvisibleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvisibleController.h; sourceTree = "<group>"; };
+		0361348521928F90002F845C /* ClickController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickController.m; sourceTree = "<group>"; };
+		0361348621928F90002F845C /* ClickController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickController.h; sourceTree = "<group>"; };
+		0361348821928F90002F845C /* VPCustomClickButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPCustomClickButton.h; sourceTree = "<group>"; };
+		0361348921928F90002F845C /* VPInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPInputView.h; sourceTree = "<group>"; };
+		0361348A21928F90002F845C /* VPEnabledButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPEnabledButton.m; sourceTree = "<group>"; };
+		0361348B21928F90002F845C /* VPCustomClickButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPCustomClickButton.m; sourceTree = "<group>"; };
+		0361348C21928F90002F845C /* VPInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPInputView.m; sourceTree = "<group>"; };
+		0361348D21928F90002F845C /* VPEnabledButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPEnabledButton.h; sourceTree = "<group>"; };
+		0361349721928F98002F845C /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		0361349821928F99002F845C /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0361347021928F38002F845C /* VaptchaSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +164,7 @@
 		036133F421927D53002F845C = {
 			isa = PBXGroup;
 			children = (
+				0361341621928D32002F845C /* Vaptcha */,
 				036133FF21927D53002F845C /* VaptchaDemo */,
 				036133FE21927D53002F845C /* Products */,
 			);
@@ -58,17 +181,233 @@
 		036133FF21927D53002F845C /* VaptchaDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0361347321928F90002F845C /* Controllers */,
+				0361341921928F11002F845C /* Lib */,
 				0361340021927D53002F845C /* AppDelegate.h */,
 				0361340121927D53002F845C /* AppDelegate.m */,
-				0361340321927D53002F845C /* ViewController.h */,
-				0361340421927D53002F845C /* ViewController.m */,
-				0361340621927D53002F845C /* Main.storyboard */,
+				0361349821928F99002F845C /* MainTabBarController.h */,
+				0361349721928F98002F845C /* MainTabBarController.m */,
 				0361340921927D55002F845C /* Assets.xcassets */,
 				0361340B21927D55002F845C /* LaunchScreen.storyboard */,
 				0361340E21927D55002F845C /* Info.plist */,
 				0361340F21927D55002F845C /* main.m */,
 			);
 			path = VaptchaDemo;
+			sourceTree = "<group>";
+		};
+		0361341621928D32002F845C /* Vaptcha */ = {
+			isa = PBXGroup;
+			children = (
+				0361346F21928F38002F845C /* VaptchaSDK.framework */,
+				0361341721928D58002F845C /* VPResource.bundle */,
+			);
+			path = Vaptcha;
+			sourceTree = "<group>";
+		};
+		0361341921928F11002F845C /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				0361341A21928F11002F845C /* Masonry */,
+				0361343421928F11002F845C /* IQKeyboardManager */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		0361341A21928F11002F845C /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				0361341B21928F11002F845C /* MASCompositeConstraint.h */,
+				0361341C21928F11002F845C /* NSLayoutConstraint+MASDebugAdditions.m */,
+				0361341D21928F11002F845C /* MASConstraint+Private.h */,
+				0361341E21928F11002F845C /* MASLayoutConstraint.h */,
+				0361341F21928F11002F845C /* NSArray+MASShorthandAdditions.h */,
+				0361342021928F11002F845C /* MASConstraintMaker.h */,
+				0361342121928F11002F845C /* View+MASAdditions.h */,
+				0361342221928F11002F845C /* NSArray+MASAdditions.h */,
+				0361342321928F11002F845C /* MASUtilities.h */,
+				0361342421928F11002F845C /* MASViewAttribute.h */,
+				0361342521928F11002F845C /* ViewController+MASAdditions.m */,
+				0361342621928F11002F845C /* MASViewConstraint.h */,
+				0361342721928F11002F845C /* MASConstraint.h */,
+				0361342821928F11002F845C /* NSLayoutConstraint+MASDebugAdditions.h */,
+				0361342921928F11002F845C /* MASCompositeConstraint.m */,
+				0361342A21928F11002F845C /* MASConstraintMaker.m */,
+				0361342B21928F11002F845C /* MASLayoutConstraint.m */,
+				0361342C21928F11002F845C /* NSArray+MASAdditions.m */,
+				0361342D21928F11002F845C /* View+MASAdditions.m */,
+				0361342E21928F11002F845C /* View+MASShorthandAdditions.h */,
+				0361342F21928F11002F845C /* Masonry.h */,
+				0361343021928F11002F845C /* MASConstraint.m */,
+				0361343121928F11002F845C /* ViewController+MASAdditions.h */,
+				0361343221928F11002F845C /* MASViewConstraint.m */,
+				0361343321928F11002F845C /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		0361343421928F11002F845C /* IQKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				0361343521928F11002F845C /* IQTextView */,
+				0361343821928F11002F845C /* IQToolbar */,
+				0361344321928F11002F845C /* Constants */,
+				0361344621928F11002F845C /* Resources */,
+				0361344821928F11002F845C /* IQKeyboardReturnKeyHandler.h */,
+				0361344921928F11002F845C /* IQKeyboardManager.h */,
+				0361344A21928F11002F845C /* IQKeyboardManager.m */,
+				0361344B21928F11002F845C /* Categories */,
+				0361345621928F11002F845C /* IQKeyboardReturnKeyHandler.m */,
+			);
+			path = IQKeyboardManager;
+			sourceTree = "<group>";
+		};
+		0361343521928F11002F845C /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				0361343621928F11002F845C /* IQTextView.m */,
+				0361343721928F11002F845C /* IQTextView.h */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		0361343821928F11002F845C /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				0361343921928F11002F845C /* IQUIView+IQKeyboardToolbar.h */,
+				0361343A21928F11002F845C /* IQToolbar.m */,
+				0361343B21928F11002F845C /* IQPreviousNextView.h */,
+				0361343C21928F11002F845C /* IQTitleBarButtonItem.m */,
+				0361343D21928F11002F845C /* IQBarButtonItem.m */,
+				0361343E21928F11002F845C /* IQUIView+IQKeyboardToolbar.m */,
+				0361343F21928F11002F845C /* IQPreviousNextView.m */,
+				0361344021928F11002F845C /* IQToolbar.h */,
+				0361344121928F11002F845C /* IQBarButtonItem.h */,
+				0361344221928F11002F845C /* IQTitleBarButtonItem.h */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		0361344321928F11002F845C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0361344421928F11002F845C /* IQKeyboardManagerConstantsInternal.h */,
+				0361344521928F11002F845C /* IQKeyboardManagerConstants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		0361344621928F11002F845C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0361344721928F11002F845C /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0361344B21928F11002F845C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0361344C21928F11002F845C /* IQNSArray+Sort.m */,
+				0361344D21928F11002F845C /* IQUIViewController+Additions.h */,
+				0361344E21928F11002F845C /* IQUITextFieldView+Additions.m */,
+				0361344F21928F11002F845C /* IQUIScrollView+Additions.m */,
+				0361345021928F11002F845C /* IQUIView+Hierarchy.m */,
+				0361345121928F11002F845C /* IQNSArray+Sort.h */,
+				0361345221928F11002F845C /* IQUIScrollView+Additions.h */,
+				0361345321928F11002F845C /* IQUITextFieldView+Additions.h */,
+				0361345421928F11002F845C /* IQUIViewController+Additions.m */,
+				0361345521928F11002F845C /* IQUIView+Hierarchy.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		0361347321928F90002F845C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0361347421928F90002F845C /* NavigationController */,
+				0361347721928F90002F845C /* BaseViewController */,
+				0361347A21928F90002F845C /* ViewControllers */,
+				0361348721928F90002F845C /* Views */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0361347421928F90002F845C /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				0361347521928F90002F845C /* VPNavigationController.m */,
+				0361347621928F90002F845C /* VPNavigationController.h */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		0361347721928F90002F845C /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0361347821928F90002F845C /* BaseViewController.m */,
+				0361347921928F90002F845C /* BaseViewController.h */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		0361347A21928F90002F845C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0361347B21928F90002F845C /* OutageController */,
+				0361347E21928F90002F845C /* EmbedController */,
+				0361348121928F90002F845C /* InvisibleController */,
+				0361348421928F90002F845C /* ClickController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0361347B21928F90002F845C /* OutageController */ = {
+			isa = PBXGroup;
+			children = (
+				0361347C21928F90002F845C /* OutageController.m */,
+				0361347D21928F90002F845C /* OutageController.h */,
+			);
+			path = OutageController;
+			sourceTree = "<group>";
+		};
+		0361347E21928F90002F845C /* EmbedController */ = {
+			isa = PBXGroup;
+			children = (
+				0361347F21928F90002F845C /* EmbedController.h */,
+				0361348021928F90002F845C /* EmbedController.m */,
+			);
+			path = EmbedController;
+			sourceTree = "<group>";
+		};
+		0361348121928F90002F845C /* InvisibleController */ = {
+			isa = PBXGroup;
+			children = (
+				0361348221928F90002F845C /* InvisibleController.m */,
+				0361348321928F90002F845C /* InvisibleController.h */,
+			);
+			path = InvisibleController;
+			sourceTree = "<group>";
+		};
+		0361348421928F90002F845C /* ClickController */ = {
+			isa = PBXGroup;
+			children = (
+				0361348521928F90002F845C /* ClickController.m */,
+				0361348621928F90002F845C /* ClickController.h */,
+			);
+			path = ClickController;
+			sourceTree = "<group>";
+		};
+		0361348721928F90002F845C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0361348821928F90002F845C /* VPCustomClickButton.h */,
+				0361348921928F90002F845C /* VPInputView.h */,
+				0361348A21928F90002F845C /* VPEnabledButton.m */,
+				0361348B21928F90002F845C /* VPCustomClickButton.m */,
+				0361348C21928F90002F845C /* VPInputView.m */,
+				0361348D21928F90002F845C /* VPEnabledButton.h */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +420,7 @@
 				036133F921927D53002F845C /* Sources */,
 				036133FA21927D53002F845C /* Frameworks */,
 				036133FB21927D53002F845C /* Resources */,
+				0361347121928F4B002F845C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -128,9 +468,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0361346721928F11002F845C /* IQKeyboardManager.bundle in Resources */,
 				0361340D21927D55002F845C /* LaunchScreen.storyboard in Resources */,
 				0361340A21927D55002F845C /* Assets.xcassets in Resources */,
-				0361340821927D53002F845C /* Main.storyboard in Resources */,
+				0361341821928D58002F845C /* VPResource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,23 +482,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0361340521927D53002F845C /* ViewController.m in Sources */,
+				0361346B21928F11002F845C /* IQUIScrollView+Additions.m in Sources */,
+				0361349921928F99002F845C /* MainTabBarController.m in Sources */,
+				0361349621928F90002F845C /* VPInputView.m in Sources */,
+				0361346A21928F11002F845C /* IQUITextFieldView+Additions.m in Sources */,
+				0361346821928F11002F845C /* IQKeyboardManager.m in Sources */,
+				0361345A21928F11002F845C /* MASConstraintMaker.m in Sources */,
+				0361346C21928F11002F845C /* IQUIView+Hierarchy.m in Sources */,
+				0361346421928F11002F845C /* IQBarButtonItem.m in Sources */,
+				0361346921928F11002F845C /* IQNSArray+Sort.m in Sources */,
+				0361346E21928F11002F845C /* IQKeyboardReturnKeyHandler.m in Sources */,
+				0361345821928F11002F845C /* ViewController+MASAdditions.m in Sources */,
+				0361349521928F90002F845C /* VPCustomClickButton.m in Sources */,
+				0361345F21928F11002F845C /* MASViewConstraint.m in Sources */,
+				0361349021928F90002F845C /* OutageController.m in Sources */,
 				0361341021927D55002F845C /* main.m in Sources */,
+				0361346221928F11002F845C /* IQToolbar.m in Sources */,
+				0361346521928F11002F845C /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				0361345B21928F11002F845C /* MASLayoutConstraint.m in Sources */,
+				0361345E21928F11002F845C /* MASConstraint.m in Sources */,
+				0361349121928F90002F845C /* EmbedController.m in Sources */,
+				0361349221928F90002F845C /* InvisibleController.m in Sources */,
+				0361345C21928F11002F845C /* NSArray+MASAdditions.m in Sources */,
 				0361340221927D53002F845C /* AppDelegate.m in Sources */,
+				0361345921928F11002F845C /* MASCompositeConstraint.m in Sources */,
+				0361345D21928F11002F845C /* View+MASAdditions.m in Sources */,
+				0361348F21928F90002F845C /* BaseViewController.m in Sources */,
+				0361345721928F11002F845C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				0361346321928F11002F845C /* IQTitleBarButtonItem.m in Sources */,
+				0361349421928F90002F845C /* VPEnabledButton.m in Sources */,
+				0361349321928F90002F845C /* ClickController.m in Sources */,
+				0361346D21928F11002F845C /* IQUIViewController+Additions.m in Sources */,
+				0361346021928F11002F845C /* MASViewAttribute.m in Sources */,
+				0361348E21928F90002F845C /* VPNavigationController.m in Sources */,
+				0361346121928F11002F845C /* IQTextView.m in Sources */,
+				0361346621928F11002F845C /* IQPreviousNextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0361340621927D53002F845C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0361340721927D53002F845C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0361340B21927D55002F845C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,7 +652,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V294PZD7MB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vaptcha",
+				);
 				INFOPLIST_FILE = VaptchaDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +674,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V294PZD7MB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vaptcha",
+				);
 				INFOPLIST_FILE = VaptchaDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
