@@ -11,7 +11,6 @@
 		0361340A21927D55002F845C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0361340921927D55002F845C /* Assets.xcassets */; };
 		0361340D21927D55002F845C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0361340B21927D55002F845C /* LaunchScreen.storyboard */; };
 		0361341021927D55002F845C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361340F21927D55002F845C /* main.m */; };
-		0361341821928D58002F845C /* VPResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0361341721928D58002F845C /* VPResource.bundle */; };
 		0361345721928F11002F845C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361341C21928F11002F845C /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		0361345821928F11002F845C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361342521928F11002F845C /* ViewController+MASAdditions.m */; };
 		0361345921928F11002F845C /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361342921928F11002F845C /* MASCompositeConstraint.m */; };
@@ -46,23 +45,11 @@
 		0361349521928F90002F845C /* VPCustomClickButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361348B21928F90002F845C /* VPCustomClickButton.m */; };
 		0361349621928F90002F845C /* VPInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361348C21928F90002F845C /* VPInputView.m */; };
 		0361349921928F99002F845C /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361349721928F98002F845C /* MainTabBarController.m */; };
-		0361349E219295D4002F845C /* VaptchaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0361349D219295D4002F845C /* VaptchaSDK.framework */; };
-		0361349F219295E1002F845C /* VaptchaSDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0361349D219295D4002F845C /* VaptchaSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		036134A42192986C002F845C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 036134A62192986C002F845C /* Localizable.strings */; };
+		03B708472193DC5400F275D0 /* MainTabBarControllerAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B708452193DC5400F275D0 /* MainTabBarControllerAnimatedTransition.m */; };
+		03B7085C2194339900F275D0 /* VPResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03B7085B2194339900F275D0 /* VPResource.bundle */; };
+		03B7086621943ADA00F275D0 /* VaptchaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B7086521943ADA00F275D0 /* VaptchaSDK.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		0361347121928F4B002F845C /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0361349F219295E1002F845C /* VaptchaSDK.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		036133FD21927D53002F845C /* VaptchaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VaptchaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,7 +59,6 @@
 		0361340C21927D55002F845C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0361340E21927D55002F845C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0361340F21927D55002F845C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0361341721928D58002F845C /* VPResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = VPResource.bundle; sourceTree = "<group>"; };
 		0361341B21928F11002F845C /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		0361341C21928F11002F845C /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		0361341D21928F11002F845C /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -147,12 +133,15 @@
 		0361348D21928F90002F845C /* VPEnabledButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPEnabledButton.h; sourceTree = "<group>"; };
 		0361349721928F98002F845C /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		0361349821928F99002F845C /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
-		0361349D219295D4002F845C /* VaptchaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VaptchaSDK.framework; sourceTree = "<group>"; };
 		036134A02192971D002F845C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		036134A121929726002F845C /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		036134A52192986C002F845C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		036134A72192986E002F845C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		036134A821929870002F845C /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		03B708452193DC5400F275D0 /* MainTabBarControllerAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarControllerAnimatedTransition.m; sourceTree = "<group>"; };
+		03B708462193DC5400F275D0 /* MainTabBarControllerAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarControllerAnimatedTransition.h; sourceTree = "<group>"; };
+		03B7085B2194339900F275D0 /* VPResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = VPResource.bundle; sourceTree = "<group>"; };
+		03B7086521943ADA00F275D0 /* VaptchaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VaptchaSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0361349E219295D4002F845C /* VaptchaSDK.framework in Frameworks */,
+				03B7086621943ADA00F275D0 /* VaptchaSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,8 +194,8 @@
 		0361341621928D32002F845C /* Vaptcha */ = {
 			isa = PBXGroup;
 			children = (
-				0361349D219295D4002F845C /* VaptchaSDK.framework */,
-				0361341721928D58002F845C /* VPResource.bundle */,
+				03B7086521943ADA00F275D0 /* VaptchaSDK.framework */,
+				03B7085B2194339900F275D0 /* VPResource.bundle */,
 			);
 			path = Vaptcha;
 			sourceTree = "<group>";
@@ -331,6 +320,7 @@
 		0361347321928F90002F845C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				03B708442193DC5400F275D0 /* UIViewControllerAnimatedTransition */,
 				0361347421928F90002F845C /* NavigationController */,
 				0361347721928F90002F845C /* BaseViewController */,
 				0361347A21928F90002F845C /* ViewControllers */,
@@ -417,6 +407,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		03B708442193DC5400F275D0 /* UIViewControllerAnimatedTransition */ = {
+			isa = PBXGroup;
+			children = (
+				03B708452193DC5400F275D0 /* MainTabBarControllerAnimatedTransition.m */,
+				03B708462193DC5400F275D0 /* MainTabBarControllerAnimatedTransition.h */,
+			);
+			path = UIViewControllerAnimatedTransition;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -427,7 +426,6 @@
 				036133F921927D53002F845C /* Sources */,
 				036133FA21927D53002F845C /* Frameworks */,
 				036133FB21927D53002F845C /* Resources */,
-				0361347121928F4B002F845C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -480,8 +478,8 @@
 				036134A42192986C002F845C /* Localizable.strings in Resources */,
 				0361346721928F11002F845C /* IQKeyboardManager.bundle in Resources */,
 				0361340D21927D55002F845C /* LaunchScreen.storyboard in Resources */,
+				03B7085C2194339900F275D0 /* VPResource.bundle in Resources */,
 				0361340A21927D55002F845C /* Assets.xcassets in Resources */,
-				0361341821928D58002F845C /* VPResource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +512,7 @@
 				0361349121928F90002F845C /* EmbedController.m in Sources */,
 				0361349221928F90002F845C /* InvisibleController.m in Sources */,
 				0361345C21928F11002F845C /* NSArray+MASAdditions.m in Sources */,
+				03B708472193DC5400F275D0 /* MainTabBarControllerAnimatedTransition.m in Sources */,
 				0361340221927D53002F845C /* AppDelegate.m in Sources */,
 				0361345921928F11002F845C /* MASCompositeConstraint.m in Sources */,
 				0361345D21928F11002F845C /* View+MASAdditions.m in Sources */,
@@ -687,6 +686,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = guoshikeji.VaptchaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -709,6 +712,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = guoshikeji.VaptchaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

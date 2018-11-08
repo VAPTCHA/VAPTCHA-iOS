@@ -22,12 +22,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     //
-    [VPSDKManager setVaptchaSDKVid:@"5b4d9c33a485e50410192331" scene:@"01"];
+//    [VPSDKManager setVaptchaSDKVid:@"5b4d9c33a485e50410192331" scene:@"01"];
+    [VPSDKManager setVaptchaSDKVid:@"5b3b1eb0a485e5041018a416" scene:@"01"];
     //
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self getMainTabBarController:false];
     [self.window makeKeyAndVisible];
-    
     //
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(outageChanged:) name:@"VPOutageChanged" object:nil];
     return YES;

@@ -14,7 +14,10 @@
 #import "InvisibleController.h"
 #import "OutageController.h"
 
-@interface MainTabBarController ()
+//
+#import "MainTabBarControllerAnimatedTransition.h"
+
+@interface MainTabBarController () <UITabBarControllerDelegate>
 
 @end
 
@@ -23,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.delegate = self;
 }
 
 - (void)setOutage:(BOOL)outage {
@@ -68,6 +72,23 @@
     outageNav.tabBarItem.image = self.outage?[UIImage imageNamed:@"正常"]:[UIImage imageNamed:@"宕机"];
     //
     self.viewControllers = controllers;
+}
+
+#pragma mark - UITabBarControllerDelegate
+- (nullable id <UIViewControllerAnimatedTransitioning>)tabBarController:(UITabBarController *)tabBarController
+                     animationControllerForTransitionFromViewController:(UIViewController *)fromVC
+                                                       toViewController:(UIViewController *)toVC  {
+    //
+    NSArray *viewControllers = self.viewControllers;
+    if ([viewControllers containsObject:fromVC]&&[viewControllers containsObject:toVC]) {
+        NSInteger fromIdx = [viewControllers indexOfObject:fromVC];
+        NSInteger toIdx = [viewControllers indexOfObject:toVC];
+        //
+        MainTabBarControllerAnimatedTransition *transition = [[MainTabBarControllerAnimatedTransition alloc] init];
+        transition.transitionTo = toIdx>fromIdx?MainTabBarControllerAnimatedTransitionToViewFromRight:MainTabBarControllerAnimatedTransitionToViewFromLeft;
+        return transition;
+    }
+    return nil;
 }
 
 @end

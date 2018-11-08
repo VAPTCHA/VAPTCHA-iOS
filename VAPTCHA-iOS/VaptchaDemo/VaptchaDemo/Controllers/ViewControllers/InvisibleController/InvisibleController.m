@@ -125,9 +125,16 @@
         make.centerX.mas_equalTo(self.contentView);
         make.size.mas_equalTo(defaultSize);
     }];
+    
+    [self.view layoutIfNeeded];
+    [self setContentViewOffsetWithMaxHeight:CGRectGetMaxY(self.resetButton.frame)+padding];
 }
 
-
+#pragma mark - orientChange:
+- (void)orientChange:(NSNotification *)noti {
+    [self.view layoutIfNeeded];
+    [self setContentViewOffsetWithMaxHeight:CGRectGetMaxY(self.resetButton.frame)+VPCustomViewPadding];
+}
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
