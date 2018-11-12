@@ -46,9 +46,9 @@
 		0361349621928F90002F845C /* VPInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361348C21928F90002F845C /* VPInputView.m */; };
 		0361349921928F99002F845C /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361349721928F98002F845C /* MainTabBarController.m */; };
 		036134A42192986C002F845C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 036134A62192986C002F845C /* Localizable.strings */; };
+		0365B4EB21997BBC0002B905 /* VaptchaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0365B4EA21997BBC0002B905 /* VaptchaSDK.framework */; };
 		03B708472193DC5400F275D0 /* MainTabBarControllerAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B708452193DC5400F275D0 /* MainTabBarControllerAnimatedTransition.m */; };
 		03B7085C2194339900F275D0 /* VPResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03B7085B2194339900F275D0 /* VPResource.bundle */; };
-		03B7086621943ADA00F275D0 /* VaptchaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B7086521943ADA00F275D0 /* VaptchaSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,10 +138,10 @@
 		036134A52192986C002F845C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		036134A72192986E002F845C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		036134A821929870002F845C /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		0365B4EA21997BBC0002B905 /* VaptchaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VaptchaSDK.framework; sourceTree = "<group>"; };
 		03B708452193DC5400F275D0 /* MainTabBarControllerAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarControllerAnimatedTransition.m; sourceTree = "<group>"; };
 		03B708462193DC5400F275D0 /* MainTabBarControllerAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarControllerAnimatedTransition.h; sourceTree = "<group>"; };
 		03B7085B2194339900F275D0 /* VPResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = VPResource.bundle; sourceTree = "<group>"; };
-		03B7086521943ADA00F275D0 /* VaptchaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VaptchaSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03B7086621943ADA00F275D0 /* VaptchaSDK.framework in Frameworks */,
+				0365B4EB21997BBC0002B905 /* VaptchaSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +194,7 @@
 		0361341621928D32002F845C /* Vaptcha */ = {
 			isa = PBXGroup;
 			children = (
-				03B7086521943ADA00F275D0 /* VaptchaSDK.framework */,
+				0365B4EA21997BBC0002B905 /* VaptchaSDK.framework */,
 				03B7085B2194339900F275D0 /* VPResource.bundle */,
 			);
 			path = Vaptcha;
